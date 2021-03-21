@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,400&display=swap");
+
+body,
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    background: #efefef;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline-box {
+    position: absolute;
+    z-index: 999;
+    justify-self: center;
+    text-align: center;
+    border: 15px solid darkgrey;
+    border-radius: 100%;
+    padding: 50px;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%) !important;
+}
+
+@media (max-width: 768px) {
+    .headline-box {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: translate(0) !important;
+        margin: 40px 0px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 100;
+    line-height: 1;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+    position: relative;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: white;
+}
+
+ul {
+    list-style:none;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.sec2, .sec4 {
+    padding: 10px 40px 10px 100px;
+}
+
+.sec1 , .sec3 {
+    padding: 10px 100px 10px 40px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 10px 10px 100px;
+        text-align: left;
+    }
+
+    img {
+        right: unset;
+        left: -60px;
+        top: 10%;
+    }
+}
+
+.sec1 {
+    border: 3px solid orange;
+}
+
+img {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 100%;
+    padding: 30px;
+}
+
+.sec1 img {
+    bottom: 15%;
+    right: -60px;
+    background: orange;
+}
+
+.sec2 img {
+    bottom: 15%;
+    left: -60px;
+    background: red;
+
+}
+
+.sec3 img {
+    top: 15%;
+    right: -60px;
+    background: green;
+
+}
+
+.sec4 img {
+    top: 15%;
+    left: -60px;
+    background: blue;
+
+}
+
+.sec1 h2 {
+    color: orange;
+}
+
+.sec2 {
+    border: 3px solid red;
+}
+
+.sec2 h2 {
+    color: red;
+}
+
+.sec3 {
+    border: 3px solid green;
+}
+
+.sec3 h2 {
+    color: green;
+}
+
+.sec4 {
+    border: 3px solid blue;
+}
+
+.sec4 h2 {
+    color: blue;
+}
+
+
+svg path {
+    fill: white;
+}
