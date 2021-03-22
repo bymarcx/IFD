@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,400&display=swap");
 
+:root {
+    --sec1-color: #fcba03;
+    --sec2-color: #ff6242;
+    --sec3-color: #009c4b;
+    --sec4-color: #005e9c;
+}
+
 body,
 html {
     padding: 0px;
@@ -44,12 +51,13 @@ main {
         border-radius: 15px;
         padding: 10px;
     }
-}
+}  
 
 h1 {
     font-size: 40px;
     font-weight: 800;
     line-height: 1;
+    color: #333;
 }
 
 h2 {
@@ -112,7 +120,7 @@ li {
 }
 
 .sec1 {
-    border: 3px solid orange;
+    border: 3px solid var(--sec1-color);
 }
 
 img {
@@ -127,56 +135,56 @@ img {
 .sec1 img {
     bottom: 15%;
     right: -60px;
-    background: orange;
+    background: var(--sec1-color);
 }
 
 .sec2 img {
     bottom: 15%;
     left: -60px;
-    background: red;
+    background: var(--sec2-color);
 
 }
 
 .sec3 img {
     top: 15%;
     right: -60px;
-    background: green;
+    background: var(--sec3-color);
 
 }
 
 .sec4 img {
     top: 15%;
     left: -60px;
-    background: blue;
+    background: var(--sec4-color);
 
 }
 
 .sec1 h2 {
-    color: orange;
+    color: var(--sec1-color);
 }
 
 .sec2 {
-    border: 3px solid red;
+    border: 3px solid var(--sec2-color);
 }
 
 .sec2 h2 {
-    color: red;
+    color: var(--sec2-color);
 }
 
 .sec3 {
-    border: 3px solid green;
+    border: 3px solid var(--sec3-color);
 }
 
 .sec3 h2 {
-    color: green;
+    color: var(--sec3-color);
 }
 
 .sec4 {
-    border: 3px solid blue;
+    border: 3px solid var(--sec4-color);
 }
 
 .sec4 h2 {
-    color: blue;
+    color: var(--sec4-color);
 }
 
 
