@@ -7,6 +7,15 @@
     --sec4-color: #005e9c;
 }
 
+a {
+    text-decoration: none;
+    color: var(--sec2-color);
+}
+
+a:hover {
+    color: black;
+}
+
 body,
 html {
     padding: 0px;
@@ -25,6 +34,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .headline-box {
@@ -51,7 +61,7 @@ main {
         border-radius: 15px;
         padding: 10px;
     }
-}  
+}
 
 h1 {
     font-size: 40px;
@@ -76,15 +86,25 @@ h3 {
 .sec4 {
     position: relative;
     width: 40%;
-    height: 40%;
     box-sizing: border-box;
     padding: 10px 40px;
     border-radius: 30px;
     background: white;
+    align-self: stretch;
+    margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+    .sec1,
+    .sec2,
+    .sec3,
+    .sec4 {
+        height: auto;
+    }
 }
 
 ul {
-    list-style:none;
+    list-style: none;
     padding: 0px;
 }
 
@@ -92,11 +112,13 @@ li {
     margin-bottom: 10px;
 }
 
-.sec2, .sec4 {
+.sec2,
+.sec4 {
     padding: 10px 40px 10px 100px;
 }
 
-.sec1 , .sec3 {
+.sec1,
+.sec3 {
     padding: 10px 100px 10px 40px;
     text-align: right;
 }
@@ -108,14 +130,17 @@ li {
     .sec4 {
         width: 100%;
         margin-bottom: 20px;
-        padding: 10px 10px 10px 100px;
+        margin-top: 50px;
+        padding: 10px 10px 10px 30px;
         text-align: left;
     }
 
     img {
-        right: unset;
-        left: -60px;
-        top: 10%;
+        position: absolute;
+        right: 10%  !important;
+        top: -60px !important;
+        left: unset !important;
+        bottom: unset;
     }
 }
 
@@ -132,6 +157,10 @@ img {
     padding: 30px;
 }
 
+@media (max-width: 768px) {
+
+}
+
 .sec1 img {
     bottom: 15%;
     right: -60px;
@@ -142,21 +171,18 @@ img {
     bottom: 15%;
     left: -60px;
     background: var(--sec2-color);
-
 }
 
 .sec3 img {
     top: 15%;
     right: -60px;
     background: var(--sec3-color);
-
 }
 
 .sec4 img {
     top: 15%;
     left: -60px;
     background: var(--sec4-color);
-
 }
 
 .sec1 h2 {
@@ -186,7 +212,6 @@ img {
 .sec4 h2 {
     color: var(--sec4-color);
 }
-
 
 svg path {
     fill: white;
