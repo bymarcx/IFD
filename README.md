@@ -16,4 +16,4 @@ nothing here.
 
 ## Task 04 - GUI - Low-Fidelity
 01. <a href="https://bymarcx.github.io/IFD/task4_prototyping/tool-analyse/AXURE_von_Marc_Eberhard.pdf" target="_blank">Toolanalyse - axure</a><br/>
-02. <a href="https://bymarcx.github.io/IFD/task4_prototyping/gui-low-fidelity/" target="_blank">Low-Fidelity Prototyp</a>W
+02. <a href="https://bymarcx.github.io/IFD/task4_prototyping/gui-low-fidelity/" target="_blank">Low-Fidelity Prototyp</a>
