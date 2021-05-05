@@ -19,4 +19,5 @@ nothing here.
 02. <a href="https://bymarcx.github.io/IFD/task4_prototyping/gui-low-fidelity/" target="_blank">Low-Fidelity Prototyp</a>
 
 ## Task 05-06 - GUI - High-Fidelity
-01. <a href="https://bymarcx.github.io/IFD/task5-6_gui-high-fid/" target="_blank">High-Fidelity Prototyp</a>
+01. <a href="https://bymarcx.github.io/IFD/task5-6_gui-high-fid/" target="_blank">Dokumentation</a>
+02. <a href="https://6bqmmb.axshare.com/#id=mbl9yr&p=dashboard" target="_blank">Link zum Prototyp</a>
