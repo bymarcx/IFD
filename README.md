@@ -21,3 +21,6 @@ nothing here.
 ## Task 05-06 - GUI - High-Fidelity
 01. <a href="https://bymarcx.github.io/IFD/task5-6_gui-high-fid/" target="_blank">Dokumentation</a>
 02. <a href="https://6bqmmb.axshare.com/#id=mbl9yr&p=dashboard" target="_blank">Link zum Prototyp</a>
+
+## Task 07 - GUI - Test and Evaluate
+01. <a href="https://bymarcx.github.io/IFD/task7_test-and-evaluate/07_Test_and_Evaluate.pdf" target="_blank">Dokumentation Testing</a>
