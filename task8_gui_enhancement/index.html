@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prototype Enhancement :: Home Automation - Dashboard</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Prototype Enhancement :: Home Automation - Dashboard</h1>
+        <p>Marc Eberhard :: Interface Design :: OMB-5</p>
+
+        <section>
+            <h2>Link zum verbesserten Prototypen</h2>
+            <p><a href="https://6bqmmb.axshare.com/#id=mbl9yr&p=dashboard">Mein Dashboard</a></p>
+
+        </section>
+
+        <section>
+            <h2>Evaluation</h2>
+            <p>
+                Um meinen Prototypen verbessern zu können, habe ich in der <a
+                    href="https://github.com/bymarcx/IFD/blob/main/task7_test-and-evaluate/07_Test_and_Evaluate.pdf">vorherigen
+                    Aufgabe</a> die Top Findings
+                herausgearbeitet.<br>
+                Diese waren:
+            </p>
+
+            <p class="bold">Prio 1 - Muss geändert werden:</p>
+            <ul>
+                <li>Prototyp skaliert noch nicht mit der Auflösung.</li>
+                <li>Der Status der Geräte rechts oben wird nicht immer erkannt.</li>
+                <li>Informationen zu einem Gerät sind nicht direkt ersichtlich.</li>
+                <li>Fehlermeldung wenn kein Raum ausgewählt ist.</li>
+                <li>Devices selber umbenennen können.</li>
+            </ul>
+            <p class="bold">Prio 2 - Kann angepasst werden:</p>
+            <ul>
+                <li>Controls für Lichtfarbe in den Kacheln deutlicher oder anders darstellen.</li>
+                <li>Devices an der Seite müssen einklappbar sein.</li>
+                <li>Nicht direkt in einen Raum springen. (Nur Auswahl zuerst)</li>
+                <li>Wordings anpassen. ( Scenes? -> Hilfe anbieten?)</li>
+                <li>„More options „ bei Geräte deutlicher benennen.</li>
+                <li>„Configure Layout“ muss prägnanter dargestellt werden.</li>
+            </ul>
+            <p class="bold">Prio 3 - Ist nicht so schlimm:</p>
+            <ul>
+                <li>Geräte nach Räume und Typ trennen/sortieren lassen.</li>
+                <li>Direkter Handlungsvorschlag bei den Notifications.</li>
+                <li>„Alles aus“ – Schalter einbauen.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Prototype Enhacement</h2>
+
+            <p class="bold">Prototyp skaliert noch nicht mit der Auflösung.</p>
+            <p>Aufgrund der kurzen Zeit, war es mir leider nicht möglich diesen Punkt umzusetzen, obwohl dieser Punkt
+                bei
+                einem richtigen Dashboard höchste Priorität haben sollte um eine geräteübergreifende responsive Ansicht
+                zu gewährleisten</p>
+
+            <p class="bold">Der Status der Geräte rechts oben wird nicht immer erkannt.</p>
+            <p>Da mein Dashboard noch nicht in der Praxis genutzt wurde, fehlte den Probanden das direkte
+                Verständnis.<br>
+                Ich denke, dass dieser Punkt in der Praxis hinfällig sein sollte.</p>
+
+            <p class="bold">Informationen zu einem Gerät sind nicht direkt ersichtlich.</p>
+            <p>Um die Informationen eines Gerätes deutlicher darzustellen, habe ich das Popup nochmals überarbeitet.
+                Dazu habe ich die Tabs "Controls, Information und Edit" hervorgehoben. Nun sollten diese besser sichtbar
+                sein.<br>
+                Ebenso habe ich den "More"-Button mit einem hover-Effekt versehen. Aufgrund den vielen Kacheln,
+                habe ich den Hover-Effekt nur bei den wichtigsten Kacheln eingefügt.</p>
+            <div class="two-img">
+                <div class="img-cont">
+                    <p>Vorher:</p>
+                    <img src="./src/img/devicecontrol.png" />
+                </div>
+                <div class="img-cont">
+                    <p>Nachher:</p>
+                    <img src="./src/img/device-control.webp" />
+                </div>
+
+            </div>
+
+            <p class="bold">Fehlermeldung wenn kein Raum ausgewählt ist.</p>
+            <p>Es wird nun eine Fehlermeldung angezeigt, wenn man eine neues Gerät hinzufügen möchte, es aber keinen
+                Raum ausgewählt ist.</p>
+            <img src="./src/img/add-device.webp" />
+            <p class="bold">Devices selber umbenennen können.</p>
+            <p>In dem "Edit Panel" eines Gerätes lassen sich nun die Geräte umbennen und einem anderen Raum hinzufügen.
+                Dies sollte die Übersichtlichkeit steigern, da es keine gleichen Geräte mehr geben sollte.
+            </p>
+            <img src="./src/img/rename-device.webp" />
+
+
+            <p class="bold">Controls für Lichtfarbe in den Kacheln deutlicher oder anders darstellen.</p>
+            <p>Um die Controls für die Lichtfarbe besser erkennbar zumachen, habe ich diesem ein Label hinzufügt. Dies
+                sollte die Erkennbarkeit steigern. <br>
+                Genauso wie bei dem Status der Geräte denke ich, dass sich auch
+                dieser
+                Punkt beim öfteren Benutzen des Dashboards selber lösen wird. </p>
+
+            <p class="bold">Devices an der Seite müssen einklappbar sein</p>
+            <p>Die Devices in der Raumansicht sind nun einklappbar. Somit werden nicht zu viele Informationen direkt
+                angezeigt, welche den Nutzer verwirren könnten. Bei einem Hover über das entsprechende Icon wird der
+                Name des Gerätes als Tooltip angezeigt. </p>
+
+            <img src="./src/img/toggle-devices.webp" />
+
+            <p class="bold">Nicht direkt in einen Raum springen. (Nur Auswahl zuerst)</p>
+            <p>Es wird nun zuerst eine Raumauswahl angezeigt, bevor man zu dem entsprechenden Raum gelangt.</p>
+            <img src="./src/img/show-room.webp" />
+
+            <p class="bold">Wordings anpassen. ( Scenes? -> Hilfe anbieten?)</p>
+            <p>Ich habe einige Wordings angepasst. Bei anderen denke ich, dass diese durch das Benutzen des Dashboards
+                klar sein sollten. Ansonsten kann man beim ersten Benutzen des Dashboards, dem Nutzer ein Tutorial
+                anbieten und diese in die Funktionen des Dashboards einführen. </p>
+
+            <p class="bold">„More options „ bei Geräte deutlicher benennen.</p>
+            <p>Diese Schaltfläche heißt nun nur noch "More". Dies beschreibt besser die Eigenschaften der Schaltfläche,
+                da dort auch Informationen zu finden sind.</p>
+
+            <p class="bold">„Configure Layout“ muss prägnanter dargestellt werden.</p>
+            <p>Es gibt nun einen Bleistift direkt in der Navigationsleiste, welcher die gleichen Aktionen hervorruft.
+                Ich denke aber das dieses Finding nur aufgrund der wenigen Probanden aufgefallen ist, und es dieses Icon
+                vermutlich garnicht benötigt.
+            </p>
+            <img src="./src/img/dashboard.png" />
+
+            <p class="bold">Geräte nach Räume und Typ trennen/sortieren lassen.</p>
+            <p>Dafür wurde bei den Geräten ein Dropdown-Menu hinzugefügt. </p>
+            <img src="./src/img/device-order.png" />
+
+
+            <p class="bold">„Alles aus“ – Schalter / Urlaubsmodus einbauen.</p>
+            <p>Hierfür kann/sollte vom Nutzer eine allgemeine Scene angelegt werden. </p>
+
+            <p class="bold"></p>
+            <p></p>
+
+        </section>
+
+        <section>
+            <h2>Weitere Anpassungen</h2>
+            <p>
+                Ebenso habe ich das Dashboard an einigen weiteren Stellen angepasst um das Styling einheitlich und
+                übersichtlich zu gestalten. <br>
+                Diese kann ich leider nicht alle im Detail aufzählen.
+            </p>
+        </section>
+
+    </div>
+</body>
+
+</html>
