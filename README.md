@@ -10,6 +10,9 @@ Repo for Interface Design :: Marc Eberhard :: SS-21
 ## Task 02
 nothing here.
 
+## Task 03-08 - GUI - Overview
+01. <a href="https://bymarcx.github.io/IFD/gui-overview" target="_blank">GUI Overview</a> 
+
 ## Task 03 - GUI - Konzept
 01. <a href="https://bymarcx.github.io/IFD/task3_gui-concept/Infografik_Konzept.pdf" target="_blank">Konzeptentwurf</a><br/>
 02. <a href="https://bymarcx.github.io/IFD/task3_gui-concept/Infografik_Moodboard.pdf" target="_blank">Moodboard</a>
@@ -24,3 +27,6 @@ nothing here.
 
 ## Task 07 - GUI - Test and Evaluate
 01. <a href="https://bymarcx.github.io/IFD/task7_test-and-evaluate/07_Test_and_Evaluate.pdf" target="_blank">Dokumentation Testing</a>
+
+## Task 08 - GUI - Enhancement
+01. <a href="https://bymarcx.github.io/IFD/task8_gui_enhancement" target="_blank">Dokumentation Enhancement</a>

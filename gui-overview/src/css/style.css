@@ -79,12 +79,29 @@ img {
 }
 
 .card {
-    width: 250px;
+    width: 300px;
     border: 1px solid #ccc;
     background: white;
-    padding: 10px;
+    padding: 10px 10px 30px;
     margin: 10px;
     border-radius: 10px;
+    position: relative;
+    top:0;
+    transition: .15s all ease;
+}
+
+.card:hover {
+    top: 5px;
+    transition: .15s all ease;
+}
+
+.card img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cards p, .cards h3 {
+    margin: 20px 20px;
 }
 
 .cards p {
