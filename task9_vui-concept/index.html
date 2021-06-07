@@ -1,0 +1,81 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Home Automation - Voice-User-Interface</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Home Automation - Voice-User-Interface</h1>
+        <p>Marc Eberhard :: Interface Design :: OMB-5</p>
+
+        <section>
+            <h2>Konzept</h2>
+            <p>
+                In dieser Aufgabe wurde ein Konzept für ein Sprachassistenten (VUI) entwickelt.<br>
+                Dieser Assistent sollte thematisch an die letzte Aufgabe (<a href="https://eknn29.axshare.com/"
+                    target="_blank">zum Dashbord</a>) angelehnt sein.
+            </p>
+            <p>
+                Sprachassistenen für die Home Automation gibt es schon viele.
+                <br>Leider können in dieser Aufgabe nicht alle Aspekte abgedeckt werden, welche ein echter
+                Sprachassistent (wie, Alexa, Google Home, Siri, ...) abdecken sollte.
+                <br> Deshalb habe ich mich in diesem Konzept auf die wichtigsten Aspekte konzentriert.
+            </p>
+            <ul>
+                <li>Das Steuern meiner Geräte.</li>
+                <li>Das Einsehen von Benachrichtungen.</li>
+                <li>Das Einbinden von neuen Geräten</li>
+                <li>Das Aktivieren von Szenen</li>
+                <li>Informationen über mein Zuhause</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Flowgraph</h2>
+            <p>
+                Für mein VUI, habe ich einen entsprechenden Flow-Graph erstellt, welcher alle relevanten Aspekte
+                abdeckt:
+            </p>
+            <h3>Aktivierungswort</h3>
+            <p>Als Aktivierungswort habe ich das Wort "Home" gewählt. 
+                <br>Dieses sollte kurz und prägnant sein. Desweiteren
+                sollte es nicht falsch verstanden werden können. um somit eine fehlerfreie Kommunikation mit dem
+                Sprachassistenten zu ermöglichen.</p>
+
+            <h3>Weitere Aspekte</h3>
+            <p>Im meinem Flow-Graphen, habe ich für jede Aktion nur eine mögliche Aussage hinterlegt. Damit der
+                Sprachassistenten aber jede Anfrage fehlerfrei verstehen kann, sollten in der Umsetzung mehrere
+                Formulierungen möglich sein. Dies habe ich in meinem Konzept noch nicht berücksichtigt.</p>
+            <p>Desweiteren kann der Assistent sich selbstständig bei neuen Benachrichtigungen auf sich aufmerksam
+                machen. Dies geschieh durch einen sanften Sound.</p>
+
+            <h3>Der Flowgraph</h3>
+            <p>
+                <strong>Legende:</strong>
+                <br>Grün: Allgemeines Aktivierungswort
+                <br>Blau: Nutzereingabe
+                <br>Orange: Rückmeldung des Systems.
+                <br>
+                <br> [ ... ]: Platzhalter für verschiedene Eingaben
+
+            </p>
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-06-07T07:40:50.271Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36\&quot; etag=\&quot;J5qYh4NuB_JUQzzXi_p6\&quot; version=\&quot;14.7.6\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;C5RBs43oDa-KdzZeNtuy\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+
+</html>
