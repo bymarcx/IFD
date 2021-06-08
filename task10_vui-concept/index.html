@@ -1,0 +1,126 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Home Automation - Voice-User-Interface</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Home Automation - Voice-User-Interface</h1>
+        <p>Marc Eberhard :: Interface Design :: OMB-5</p>
+
+        <section>
+            <h2>Konzept</h2>
+            <p>
+                In dieser Aufgabe wurde ein Konzept für ein Sprachassistenten (VUI) entwickelt.<br>
+                Dieser Assistent sollte thematisch an die letzte Aufgabe (<a href="https://eknn29.axshare.com/"
+                    target="_blank">zum Dashbord</a>) angelehnt sein.
+            </p>
+            <p>
+                Sprachassistenen für die Home Automation gibt es schon viele.
+                <br>Leider können in dieser Aufgabe nicht alle Aspekte abgedeckt werden, welche ein echter
+                Sprachassistent (wie, Alexa, Google Home, Siri, ...) abdecken sollte.
+                <br> Deshalb habe ich mich in diesem Konzept auf die wichtigsten Aspekte konzentriert.
+            </p>
+            <ul>
+                <li>Das Steuern meiner Geräte.</li>
+                <li>Das Einsehen von Benachrichtungen.</li>
+                <li>Das Einbinden von neuen Geräten</li>
+                <li>Das Aktivieren von Szenen</li>
+                <li>Informationen über mein Zuhause</li>
+            </ul>
+
+            <h3>Ein Anwendungszenario</h3>
+            <p>Ein Voice-User-Interface im Haushalt bzw. zu Hause kann für viele Zwecke genutzt werden.<br>
+                Mit den folgenen Anwendungszenarien möchte ich einen kurzen Einblick in die Nutzung vom meinem
+                Voice-User-Interface geben:</p>
+
+            <h4>Abends im Bett</h4>
+            Max liegt Abends in seinem Bett und hat vergessen das Licht auszuschalten. Daher bittet er seinen
+            Assistenten das Licht auszuschalten. <br>
+
+            <div class="quote"><span class="big">Hallo Home, </span>schalte das Licht im Schlafzimmer aus.</div>
+            <div class="quote answer"><span class="big">Hallo Max, </span>ich habe das Licht für dich ausgeschaltet.
+            </div>
+
+
+            Mitten in der Nacht wacht Max auf, da er durstig ist. Da es sehr dunkel ist und er nicht sieht,
+            bittet er seinen Assistenen das Nachtlicht für 10s zu aktivieren.
+
+            <div class="quote"><span class="big">Hallo Home, </span>aktiviere das Nachtlicht für 10 Sekunden.</div>
+            <div class="quote answer"><span class="big">Hallo Max, </span>das Nachtlicht wurde für 10 Sekunden
+                aktiviert.</div>
+
+            <h4>Neues Gerät verbinden</h4>
+            Max hat sich ein neues Gerät gekauft und möchtet dieses nun in seinem Zuhause intergrieren, daher bittet er
+            seinen Assistenten das Gerät zu integrieren.
+
+            <div class="quote"><span class="big">Hallo Home, </span>ich möchte mein neues Gerät verbinden.</div>
+            <div class="quote answer"><span class="big">Hallo Max, </span>ich gehe auf die Suche nach deinem Gerät.
+            </div>
+            <div class="quote answer"><span class="big">...</span></div>
+            <div class="quote answer">Ich habe das Gerät Klimaanlage R32G7 gefunden. Ist dies das richtige?</div>
+            <div class="quote">Ja.</div>
+            <div class="quote answer">Gut, wie soll ich das Gerät benennen?</div>
+            <div class="quote">Klimaanlage.</div>
+            <div class="quote answer">Möchtest du Klimaanlage einem Raum zuordnen?</div>
+            <div class="quote">Ja, Küche.</div>
+            <div class="quote answer">Dein neues Gerät Klimaanlage wurde dem Raum Küche hinzugefügt.</div>
+            <div class="quote answer">Kann ich sonst noch etwas für dich tun?</div>
+            <div class="quote">Nein, Danke.</div>
+        </section>
+
+        <section>
+            <h2>Flowgraph</h2>
+            <p>
+                Für mein VUI, habe ich einen entsprechenden Flow-Graph erstellt, welcher alle relevanten Aspekte
+                abdeckt:
+            </p>
+            <h3>Aktivierungswort</h3>
+            <p>Als Aktivierungswort habe ich das Wort "Home" gewählt.
+                <br>Dieses sollte kurz und prägnant sein. Desweiteren
+                sollte es nicht falsch verstanden werden können. um somit eine fehlerfreie Kommunikation mit dem
+                Sprachassistenten zu ermöglichen.
+            </p>
+
+            <h3>Weitere Aspekte</h3>
+            <p>Im meinem Flow-Graphen, habe ich für jede Aktion nur eine mögliche Aussage hinterlegt. Damit der
+                Sprachassistenten aber jede Anfrage fehlerfrei verstehen kann, sollten in der Umsetzung mehrere
+                Formulierungen möglich sein. Dies habe ich in meinem Konzept noch nicht berücksichtigt.</p>
+            <p>Desweiteren kann der Assistent sich selbstständig bei neuen Benachrichtigungen auf sich aufmerksam
+                machen. Dies geschieh durch einen sanften Sound. <br>
+                Ebenso sollten können Rückmeldungen beim Bedienen von Geräten deaktiviert werden, da man Zuhause,
+                solange man sich im selben Raum aufhält, ein entsprechendes Feedback von den Geräten selber erhält.
+                <br>Zum
+                Beispiel wenn das Licht eingeschaltet werden soll, benötigt der Nutzer kein Feedback von seinem
+                Assistenten.</p>
+
+            <h3>Der Flowgraph</h3>
+            <p>
+                <strong>Legende:</strong>
+                <br>Grün: Allgemeines Aktivierungswort.
+                <br>Blau: Nutzereingabe.
+                <br>Orange: Rückmeldung des Systems.
+                <br>
+                <br> [ ... ]: Platzhalter für verschiedene Eingaben.
+
+            </p>
+            <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-06-08T09:28:02.132Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36\&quot; etag=\&quot;39i55Lh_pOEYyEIzb5RH\&quot; version=\&quot;14.7.6\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;C5RBs43oDa-KdzZeNtuy\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+    <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+
+</html>

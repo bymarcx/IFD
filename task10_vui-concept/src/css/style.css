@@ -52,3 +52,23 @@ a:hover {
 .bold {
     font-weight: bolder;
 }
+
+
+.quote {
+    font-size: 20px;
+    color: #486113;
+    width: 70%;
+    margin: 20px auto; 
+    border-bottom: 1px solid #eee;
+    padding: 0 30px;
+}
+
+.quote.answer {
+    color: #5a91c7;
+    text-align: end;
+}
+
+.quote .big {
+        font-size: 48px;
+        font-weight: 700;
+}
