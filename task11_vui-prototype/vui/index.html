@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Playgroud Artyom</title>
+    <title>Home - Dein Sprachassistent</title>
     <script src="js/libs/artyom.window.min.js"></script>
     <script src="js/playgroud-artyom-script.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap');
 
+        html,
         body {
             margin: 0;
             padding: 0;
@@ -19,20 +21,42 @@
             text-align: center;
             background: rgba(12, 42, 93, 0.05);
             font-family: 'Hind', sans-serif !important;
-
+            width: 100%;
+            height: 100%;
         }
 
-        .wrapper {
+        .container-fluid {
+            padding: 0 150px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .container-fluid {
+                padding: 0 50px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container-fluid {
+                padding: 0 10px;
+            }
+        }
+
+        .inner {
             background: white;
-            width: 80vw;
-            padding: 50px 20px;
-            margin: 50px auto;
             border-radius: 30px;
+            margin: 50px 10px;
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .inner {
+                margin: 10px;
+            }
         }
 
         h1 {
             font-weight: bold;
-            padding:0;
+            padding: 0;
             margin: 30px 0 0;
             color: #0C2A5D;
             font-size: 64px;
@@ -40,13 +64,37 @@
 
         h2 {
             font-weight: lighter;
-            margin: 0 0 30px;
-            padding:0;
+            margin: 0px 0 30px;
+            padding: 0;
             color: #0C2A5D;
             font-size: 24px;
         }
 
+        .col-md-4 h2 {
+            font-weight: bold;
+            margin: 30px 0 30px;
+        }
 
+        .divider {
+            border-bottom: 2px solid rgba(12, 42, 93, 0.1);
+            margin: 50px 0 20px;
+        }
+
+        #recognizedID {
+            font-size: 14px;
+            font-weight: light;
+            color: #000;
+            border-radius: 30px;
+            padding: 15px 0;
+            margin: 30px auto;
+            background: rgba(12, 42, 93, 0.1);
+        }
+
+        #recognizedID span {
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgba(12, 42, 93, 0.8);
+        }
 
         #activate {
             -webkit-background-clip: text;
@@ -57,7 +105,7 @@
             border: 0px solid #0C2A5D;
             width: 100px;
             height: 100px;
-            border-radius: 30px;
+            border-radius: 20px;
             margin: 40px;
             font-size: 0;
             cursor: pointer;
@@ -92,18 +140,72 @@
                 box-shadow: 0px 0px 20px #0C2A5D;
             }
         }
+
+
+        svg {
+            display: block;
+            width: 100%;
+            height: 30%;
+            padding: 0;
+            margin: 0;
+            bottom: 0px;
+            position: fixed;
+
+        }
+
+        path {
+            stroke-linecap: square;
+            stroke: white;
+            stroke-width: 0.5px;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Hallo <span id="name">Marc</span>!</h1>
-        <h2>Was kann ich für dich tun?</h2>
-        <div id="error">Bitte Seite neu laden!</div>
-        <div id="commands"></div>
-        <button id="activate">Los gehts</button>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="inner">
+                        <h1>Hallo <span id="name">Marc</span>!</h1>
+                        <h2>Was kann ich für dich tun?</h2>
+                        <div  id="recognizedID">Ich höre...</div>
+                        <div id="error"></div>
+                        <button id="activate">Los gehts</button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="inner">
+                        <h2>Befehle</h2>
+                        <div id="commands"></div>
+                        <div class="divider"></div>
+                        <div id="mode"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg preserveAspectRatio="none" id="visualizer" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+
+                <mask id="mask">
+                    <g id="maskGroup">
+                    </g>
+                </mask>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#E6E9EE;stop-opacity:1" />
+                    <stop offset="20%" style="stop-color:#9DA9BE;stop-opacity:1" />
+                    <stop offset="70%" style="stop-color:#9DA9BE;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#9DA9BE;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)" mask="url(#mask)"></rect>
+        </svg>
+
     </div>
+
 </body>
 
 </html>
